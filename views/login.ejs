@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <style type="text/css">
+        * {
+        margin: 0;
+        padding: 0;
+        }
+      body {
+        background-color: #C0C5C1;
+      }
+      .container-fluid {
+        margin-top: 50px;
+        margin-left: 50px;
+        background-color: #3F334D;
+        padding: 20px;
+        border-radius: 10px;
+        height: 40%;
+        width: 40%;
+      }
+      h1 {
+        color: #EAF0CE;
+        margin-bottom: 20px;
+      }
+      form {
+        margin-bottom: 20px;
+      } 
+
+      label,span {
+        color: white;
+      }
+
+      .form-control {
+        background-color: #EAF0CE;
+      }
+      
+      
+      </style>
+    <div class="container-fluid">
+        <h1>Enter Creds</h1>
+    <form action="/login" method="POST">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputUsername6" class="col-form-label">Username</label>
+            </div>
+            <div class="col-auto">
+              <input  name="username" id="username" class="form-control"
+               aria-describedby="usernameHelpInline" />
+            </div>
+          </div>
+          <hr>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Password</label>
+        </div>
+        <div class="col-auto">
+          <input  name="password" id="inputPassword6" class="form-control"
+           aria-describedby="passwordHelpInline" />
+        </div>
+        <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text">Must be 8-20 characters long.</span>
+        </div>
+    </div>
+    <button type="sub" class="btn btn-outline-success btn-sm">Login</button>
+      
+      
+    </form>
+    <span>*if u already have a acc then simply login or if u dont have u can create one by giving new creds</span>
+    </div>
+  </body>
+</html>
