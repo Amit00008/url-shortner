@@ -110,6 +110,6 @@ app.get('/:shortUrl', async (req, res) => {
   res.redirect(shortUrl.full)
 })
 
-app.listen(5000, ()=>{
-    console.log('Server started on port 5000');
+app.listen(10000, ()=>{
+    console.log('Server started on port 10000');
 });
